@@ -11,53 +11,80 @@
 
 As a freelancer, i usually track my work on a notepad, writing down what i have done so far in a project, putting a difficulty level to the accomplished tasks, and put a price,
 But most of the time , i came accross to a lot of projects , with other collaborators, that we should track each one's tasks,
+<br>
 So that pushed me to build a simple tracking system 
+<br>
 A system build with Laravel , and Ajax for Loading data,
+<br>
 In this system you can :
    <ul>
     <li>Create An Account</li>
+    <li>Create a Project</li>
+    <li>Add a Collaborator to your project</li>
+    <li>Create tasks in your Project</li>
+    <li>Edit your tasks</li>
+    <li>Delete the canceled taskes</li>
+    <li>...Still Other Ideas in the works</li>
    </ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Rules to add a collaborator
+The system was designed to coordinate accomplished task between collaborator
+<br>
+to add a Collaborator , you need to ask your guest to generate a token, (you will find a button named " Allow others to add me" on the Projects list page)
+generate a new one , and send you his token.
+<br>
+paste the generated token on the "add collaborate" (check in project's tasks page)
+<br>
+then request an invitation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Issues
+<dl>
+    <dt>when create a new task, the total spent and amount and total tasks won't get updated</dt>
+        <dd>briefly the issue is in Ajax, since i can only return view without other values to ajax</dd>
+    <dt>when Edit a task</dt>
+        <dd>same issue with create, to compare that i can return multiple value to ajax ,check delete function</dd>
+        <dd>detele function return only variable, and i didnt include a view, thats why it works</dd>
+</dl>
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## To update
+<ul>
+    <li>deny access if user isn't logged in</li>
+    <li>delete home route</li>
+    <li>show analetics in project's tasks, like all collaborator's analetics throught the project </li>
+</ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## New Goals
+<ul>
+    <li>print into microsoft word, or excel..</li>
+    <li>make a messaging system</li>
+    <li>show analetics in project's tasks, like all collaborator's analetics throught the project </li>
+    <li></li>
+</ul>
 
-## Laravel Sponsors
+## Neglected Parts
+The projects won't include a system payment, it's just a tool to help creators like me to track their works, 
+<br>
+speaking about the payment, it's about the trust in your team
+<br>
+i include some other neglected Parts
+<ul>
+    <li>Design and responsivity</li>
+    <li>portability</li>
+    <li>not Using Ajax in all data circulation</li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+## Project History
+Started it in : 20/08/2020 , after learning more about Ajax, also due to some difficulties on my freelancing path
+<br>
+Deployed on github : 30/08/2020 after working 12 hours to build it 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+
 
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
@@ -66,4 +93,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# saavWebsite" 
+ 
