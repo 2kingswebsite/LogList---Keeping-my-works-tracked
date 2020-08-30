@@ -7,9 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## About The Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+As a freelancer, i usually track my work on a notepad, writing down what i have done so far in a project, putting a difficulty level to the accomplished tasks, and put a price,
+But most of the time , i came accross to a lot of projects , with other collaborators, that we should track each one's tasks,
+So that pushed me to build a simple tracking system 
+A system build with Laravel , and Ajax for Loading data,
+In this system you can :
+   <ul>
+    <li>Create An Account</li>
+   </ul>
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
